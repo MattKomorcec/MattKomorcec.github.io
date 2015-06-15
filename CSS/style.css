@@ -189,7 +189,7 @@ form textarea {
 
 #hero {
     background:     linear-gradient(rgba(246, 243, 28, 0.4) 40%, transparent),
-                    url('../img/hero_bg.jpg') no-repeat center;
+                    url('http://mattkomorcec.github.io/img/hero_bg.jpg') no-repeat center;
     background-size: cover;
     padding: 5%;
     height: 900px;
