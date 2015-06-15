@@ -1,0 +1,193 @@
+@media screen and (max-width: 855px) {
+
+	#siteHeader #nav #links a {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+		padding: 0.3em;
+	}
+
+	#siteHeader #info .logo {
+		width: 25%;
+		margin: 0 40%;
+	}
+
+	#siteHeader #info {
+		float: none;
+	}
+
+	#siteHeader #info h1 {
+		text-align: center;
+	}
+
+	#hero h1 {
+		font-size: 1.8em;
+		margin-top: 2em;
+	}
+
+	#hero h3 {
+		margin: 3.5em 0 3.5em 0;
+		font-size: 1.1em;
+	}
+
+	#hero {
+		height: 650px;
+	}
+
+	#skills .myPic {
+		width: 45%;
+	}
+
+	#skills h3 {
+		font-size: 1.4em;
+	}
+
+	#skills .hr {
+		margin: 2em auto 2em auto;
+		width: 80%;
+	}
+
+	#skills p:last-of-type {
+    	text-align: center;
+    	font-size: 1em;
+    	width: 90%;
+    	margin: 0 auto;
+	}
+
+	#skills .threeBoxes {
+		width: 90%;
+		border: 2px solid transparent;
+		margin: 0.5em 5% 0.5em 5%;
+	}
+
+	#skills .threeBoxes h3 {
+		font-size: 1.2em;
+		margin: 0.5em 0 0.5em 0;
+
+	}
+
+	#contact {
+		padding: 1em 0.5em 1em 0.5em;
+	}
+
+	#contact form {
+		width: 90%;
+		text-align: left;
+		margin: auto 5% 1em 5%;
+	}
+
+	#contact label, input, textarea {
+		font-size: 1em;
+	}
+
+	#contact input {
+		width: 100%;
+		height: 1.8em;
+		padding: 0.3125em;
+	}
+
+	#contact textarea {
+		width: 100%;
+		height: 9em;
+	}
+
+	#contact #button {
+		font-size: 1.2em;
+		width: 100%;
+		height: 3em;
+	}
+
+	#contact #map {
+		width: 100%;
+		height: 20em;
+	}
+}
+
+
+@media screen and (min-width: 856px) and (max-width: 1280px) {
+
+	#siteHeader #nav #info {
+		width: 40%;
+	}
+
+	#hero h1 {
+		font-size: 1.8em;
+		margin-top: 2em;
+	}
+
+	#hero h3 {
+		margin: 3.5em 0 3.5em 0;
+		font-size: 1.1em;
+	}
+
+	#hero {
+		height: 650px;
+	}
+
+	#skills .myPic {
+		width: 25%;
+	}
+
+	#skills h3 {
+		font-size: 1.4em;
+	}
+
+	#skills .hr {
+		margin: 2em auto 2em auto;
+		width: 80%;
+	}
+
+	#skills p:last-of-type {
+    	text-align: center;
+    	font-size: 1em;
+    	width: 90%;
+    	margin: 0 auto;
+	}
+
+	#skills .threeBoxes {
+		border: 2px solid transparent;
+		width: 28%;
+	}
+
+	#skills .threeBoxes h3 {
+		font-size: 1.2em;
+		margin: 0.5em 0 0.5em 0;
+
+	}
+
+	#contact {
+		padding: 1em 0.5em 1em 0.5em;
+	}
+
+	#contact form {
+		width: 90%;
+		text-align: left;
+		margin: auto 5% 1em 5%;
+	}
+
+	#contact label, input, textarea {
+		font-size: 1em;
+	}
+
+	#contact input {
+		width: 100%;
+		height: 1.8em;
+		padding: 0.3125em;
+	}
+
+	#contact textarea {
+		width: 100%;
+		height: 9em;
+	}
+
+	#contact #button {
+		font-size: 1.2em;
+		width: 100%;
+		height: 3em;
+	}
+
+	#contact #map {
+		width: 100%;
+		height: 20em;
+	}
+}

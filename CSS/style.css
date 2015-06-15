@@ -1,0 +1,359 @@
+﻿/************* Global CSS *************/
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: Oldenburg;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: Oldenburg;
+    font-size: 1em;
+    background: #ccc;
+}
+
+::selection {
+  background: #440628; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #440628; /* Gecko Browsers */
+}
+
+.clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.active {
+    color: #00a0b0;
+}
+
+h1, h2, h3 , h4 {
+	font-family: Oldenburg;
+	text-shadow: 1px 1px 1px black; 
+}
+
+/************* Header CSS *************/
+
+#siteHeader {
+    background: #440628;
+    padding: 20px;
+    border: 2px solid #000;
+    width: 100%;
+    z-index: 100;
+    color: #fff;
+}
+
+#info {
+    float: left;
+}
+
+#info img:hover {
+    opacity: 0.8;
+	filter: alpha(opacity=80); /* For IE8 and older browsers */
+}
+
+#links {
+    font-size: 1.2em;
+    margin: 0 10px 0 0;
+    padding: 20px;
+    text-align: right;
+}
+
+#links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#links a:hover {
+    color: #00a0b0;
+}
+
+#links a:active {
+    color: #00a0b0;
+}
+
+#info > h1 {
+    font-family: 'Clicker Script';
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.blue {
+    color: #00a0b0;
+    font-family: 'Clicker Script';
+}
+
+#info .logo {
+    width: 11%;
+}
+
+/************* Site Footer CSS *************/
+
+#siteFooter {
+    background: #440628;
+    padding: 1em;
+    border: 2px solid #000;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+}
+
+#siteFooter div:last-of-type {
+    font-size: 0.2em;
+    font-family: Oldenburg;
+    padding: 0.4em;
+}
+
+#siteFooter div a {
+    text-decoration: none;
+    color: #00a0b0;
+}
+
+/*************CONTACT PAGE*************/
+#contact {
+    background: #333;
+    padding: 1.25em 1.25em 1.25em 6.25em;
+	box-shadow: inset 0 0 15px 5px black;
+    color: #fff;
+}
+
+#map {
+    width: 65%;
+    height: 26.25em; /* 420px */
+    z-index: 0;
+    border: 2px solid black;
+}
+
+form {
+    margin: 0 4.1rem 0 0;
+    float: left;
+    text-align: center;
+}
+
+#button {
+    width: 9.375em; /* 150px */
+    height: 2.5em; /* 40px */
+    background: #440628;
+    border: 0.125em solid #000;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: Oldenburg;
+}
+
+#button, input, textarea {
+    border-radius: 5px;
+    color: #fff;
+}
+
+#button:hover, input:hover, textarea:hover {
+    background: #410424;
+    color: #fff;
+}
+
+form label {
+    font-size: 1.3em;
+}
+
+form input {
+    width: 18.75em; /* 300px */
+    height: 1.875em; /* 30px */
+    background: #440628;
+    padding: 0.3125em;
+    border: 2px solid #000;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    font-family: Oldenburg;
+    color: #fff;
+}
+
+form textarea {
+    background: #440628;
+    padding: 0.3125em;
+    border: 2px solid #000;
+    margin-bottom: 10px;
+    width: 18.75em; /* 300px */
+    height: 9.375em; /* 150px */
+    font-size: 1.1em;
+    font-family: Oldenburg;
+    color: #fff;
+}
+
+/**************** Hero ***************/
+
+#hero {
+    background:     linear-gradient(rgba(246, 243, 28, 0.4) 40%, transparent),
+                    url('../img/hero_bg.jpg') no-repeat center;
+    background-size: cover;
+    padding: 5%;
+    height: 900px;
+    box-shadow: inset 0 0 15px 5px black;
+    width: 100%;
+	color: white;
+	text-align: center;
+}
+
+#hero h1 {
+	margin-top: 4.7em;
+	font-size: 2.5em;
+}
+
+#hero h2 {
+	margin-top: 2em;
+	font-size: 1.5em;
+}
+
+#hero h3 {
+	margin: 7.5em 0 5em 0;
+	font-size: 1.4em;
+}
+
+.name {
+	color: #00a0b0;
+}
+
+/****************Skills ***************/
+#skills {
+	background: linear-gradient(to bottom, transparent, #00a0b0);
+	padding-top: 2rem;
+	box-shadow: inset 0 0 15px 5px black;
+    color: #fff;
+}
+
+#skills .myPic {
+	width: 15%;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin: auto;
+	display: block;
+    box-shadow: 0 0 15px black;
+}
+
+#skills h3 {
+	margin: 2rem 0 2rem 0;
+	font-size: 1.6rem;
+    text-align: center;
+}
+
+#skillsCenter {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.threeBoxes {
+    padding: 1rem;
+    width: 30%;
+    float: left;
+    margin: 0 1rem 0 1.55rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.threeBoxes img {
+    margin: 1rem 0 1rem 0;
+}
+
+.threeBoxes:hover {
+    background: white;
+    color: #00a0b0;
+    font-weight: bold;
+    border: 1px groove black;
+}
+
+.hr {
+    height: 0.25rem;
+    background: white;
+    border: 1px solid black;
+    width: 60%;
+    margin: 4rem auto 4rem auto;
+    box-shadow: 0 0 2px black;
+}
+
+#skills p:last-of-type {
+    text-align: center;
+}
+
+#skills button {
+    width: 10em;
+    height: 2.5em;
+    background: #00a0b0;
+    color: white;
+    margin: 1rem 0 4rem 0;
+    font-family: Oldenburg;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+#skills button:hover {
+    background: white;
+    color: #00a0b0;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+}
+
+/**************** Work ***************/
+
+#work {
+    background:     linear-gradient(transparent, rgba(246, 243, 28, 0.4) 100%),
+                    url('../img/work_bg.jpg') no-repeat center;
+    background-size: cover;
+    padding: 5%;
+    box-shadow: inset 0 0 15px 5px black;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#work h2 {
+    margin: 2rem 0 2rem 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#photo, #development {
+    width: 12em;
+    height: 3.5em;
+    background: #00a0b0;
+    color: white;
+    margin: 1rem 0.5em 4rem 0.5em;
+    font-family: Oldenburg;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+#photo:hover, #development:hover {
+    background: white;
+    color: #00a0b0;
+    border: 2px solid #00a0b0;
+}
+
+.activeClass {
+    background: white;
+    color: #00a0b0;
+    border: 2px solid #00a0b0;
+}
+
+#Holder img {
+    width: 30%;
+    margin: 10px;
+    border: 2px solid white;
+}
+
+#Holder img:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and older browsers */
+}
