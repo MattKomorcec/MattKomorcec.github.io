@@ -50,7 +50,7 @@ var map = new GMaps({
 
 // Loading My Work
 
-var photoArray = ['Mountain.jpg','Sara.jpg','the_flower.jpg','Sara_feather.jpg','Viking_ship.jpg','on_top.jpg'];
+var photoArray = ['Mountain.JPG','Sara.JPG','the_flower.JPG','Sara_feather.JPG','Viking_ship.JPG','on_top.JPG'];
 
 var dev = $("#development");
 var photo = $("#photo");
