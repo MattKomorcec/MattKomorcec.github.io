@@ -45,7 +45,6 @@ h1, h2, h3 , h4 {
     padding: 20px;
     border: 2px solid #000;
     width: 100%;
-    z-index: 100;
     color: #fff;
 }
 
@@ -189,7 +188,7 @@ form textarea {
 
 #hero {
     background:     linear-gradient(rgba(246, 243, 28, 0.4) 40%, transparent),
-                    url('../img/hero_bg.JPG') no-repeat center;
+                    url('../img/hero_bg.jpg') no-repeat center;
     background-size: cover;
     padding: 5%;
     height: 900px;
@@ -305,7 +304,7 @@ form textarea {
 
 #work {
     background:     linear-gradient(transparent, rgba(246, 243, 28, 0.4) 100%),
-                    url('../img/work_bg.JPG') no-repeat center;
+                    url('../img/work_bg.jpg') no-repeat center;
     background-size: cover;
     padding: 5%;
     box-shadow: inset 0 0 15px 5px black;
@@ -340,20 +339,22 @@ form textarea {
     border: 2px solid #00a0b0;
 }
 
-.activeClass {
-    background: white;
-    color: #00a0b0;
-    border: 2px solid #00a0b0;
-}
-
-#Holder img {
+#photoHolder img {
     width: 30%;
     margin: 10px;
     border: 2px solid white;
 }
 
-#Holder img:hover {
+#photoHolder img:hover {
     cursor: pointer;
     opacity: 0.9;
     filter: alpha(opacity=90); /* For IE8 and older browsers */
+}
+
+#photoGallery {
+
+}
+
+#photoGallery img {
+
 }

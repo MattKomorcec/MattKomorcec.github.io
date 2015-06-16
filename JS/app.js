@@ -50,32 +50,67 @@ var map = new GMaps({
 
 // Loading My Work
 
-var photoArray = ['Mountain.JPG','Sara.JPG','the_flower.JPG','Sara_feather.JPG','Viking_ship.JPG','on_top.JPG'];
+var photoArray = ['Mountain.jpg','Sara.jpg','the_flower.jpg','Sara_feather.jpg','Viking_ship.jpg','on_top.jpg'];
 
 var dev = $("#development");
 var photo = $("#photo");
-var holder = $("#Holder");
+var photoHolder = $("#photoHolder");
+var devHolder = $("#devHolder");
 var devMsg = "<h3>Unfortunately, this section is still empty. Why don't you contact me so we can change that? :-)</h3>";
 var photoMsg = "<h3>I'm not a professional photographer, but I enjoy taking pictures. Check them out</h3>";
 
-function LoadPhotos() {
-	holder.append(photoMsg);
-	for (var i = 0; i < photoArray.length; i++) {
-		var img = '<img src="img/photo/' + photoArray[i] + '" />';
-		holder.append(img);
-	}
-	holder.hide();
+devHolder.append(devMsg);
+photoHolder.append(photoMsg);
+
+devHolder.hide();
+photoHolder.hide();
+
+for (var i = 0; i < photoArray.length; i++) {
+	var img = '<img src="img/photo/' + photoArray[i] + '" />';
+	photoHolder.append(img);
 }
 
 dev.on("click", function() {
-	holder.empty().fadeToggle(1000);
-	holder.append(devMsg);
+	if(photoHolder.css("display") != "none") {
+		photoHolder.slideUp(1500);
+		devHolder.slideDown(1500);
+	}
+	else {
+		devHolder.slideDown(1500);
+	}
+	$(this).css({
+		"background-color": "white",
+		"border" : "2px solid #00a0b0",
+		"color": "#00a0b0"
+	});
+	photo.css({
+		"background-color": "#00a0b0",
+		"border" : "2px solid white",
+		"color": "white"
+	});
 });
 
 photo.on("click", function() {
-	holder.empty();
-	LoadPhotos();
-	holder.fadeToggle(1000);
+	if(devHolder.css("display") != "none") {
+		devHolder.slideUp(1500);
+		photoHolder.slideDown(1500);
+	}
+	else {
+		photoHolder.slideDown(1500);
+	}
+	$(this).css({
+		"background-color": "white",
+		"border" : "2px solid #00a0b0",
+		"color": "#00a0b0"
+	});
+	dev.css({
+		"background-color": "#00a0b0",
+		"border" : "2px solid white",
+		"color": "white"
+	});
 });
+
+// Open Gallery when clicking on an image
+
 
 });
