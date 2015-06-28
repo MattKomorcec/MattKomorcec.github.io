@@ -1,6 +1,8 @@
 $(function() {
 
-// Google maps
+/* =================================================
+***************** Google Maps **********************
+================================================= */ 
 var map = new GMaps({
             div: '#map',
             lat: 45.8144400,
@@ -48,9 +50,41 @@ var map = new GMaps({
             }
         });
 
-// Loading My Work
+/* =================================================
+******** Mobile website dropdown menu **************
+================================================= */ 
 
-var photoArray = ['Mountain.JPG','Sara.JPG','the_flower.JPG','Sara_feather.JPG','Viking_ship.JPG','on_top.JPG'];
+	// Create a menu item and append to #siteHeader
+	var $menuHolder = $("<div class='menu'></div>");
+	var $menuBtn = $("<li class='menuBtn'><a href='#'>Menu</a></li>");
+	$("#siteHeader").append($menuBtn);
+
+	$("#siteHeader").append($menuHolder);
+	$menuHolder.hide();
+
+// Cycle through each navigation link
+$("#siteHeader #nav #links a").each(function() {
+	// store the anchor
+	var link = $(this);
+	var $anchor = link.clone();
+	// create a list item
+	var $li = $("<li></li>");
+	// append the anchor to the li
+	$li.append($anchor);
+	//append the list item to the menuHolder
+	$menuHolder.append($li);
+});
+
+// When menuBtn is clicked, toggle the menu
+$menuBtn.click(function() {
+	$menuHolder.slideToggle();
+})
+
+
+/* =================================================
+***************** Loading My Work ******************
+================================================= */ 
+var photoArray = ['Mountain.jpg','Sara.jpg','the_flower.jpg','Sara_feather.jpg','Viking_ship.jpg','on_top.jpg'];
 
 var dev = $("#development");
 var photo = $("#photo");
