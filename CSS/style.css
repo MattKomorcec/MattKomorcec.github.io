@@ -123,79 +123,11 @@ h1, h2, h3 , h4 {
     color: #00a0b0;
 }
 
-/*************CONTACT PAGE*************/
-#contact {
-  background: #667;
-  padding: 2em 0;
-  color: #fff;
-}
-
-#map {
-    width: 65%;
-    height: 26.25em; /* 420px */
-    z-index: 0;
-    border: 2px solid black;
-}
-
-form {
-    margin: 0 4.1rem 0 0;
-    float: left;
-    text-align: center;
-}
-
-#button {
-    width: 9.375em; /* 150px */
-    height: 2.5em; /* 40px */
-    background: #440628;
-    border: 0.125em solid #000;
-    text-align: center;
-    font-size: 1.4em;
-    font-family: 'Nunito';
-}
-
-#button, input, textarea {
-    border-radius: 5px;
-    color: #fff;
-}
-
-#button:hover, input:hover, textarea:hover {
-    background: #410424;
-    color: #fff;
-}
-
-form label {
-    font-size: 1.3em;
-}
-
-form input {
-    width: 18.75em; /* 300px */
-    height: 1.875em; /* 30px */
-    background: #440628;
-    padding: 0.3125em;
-    border: 2px solid #000;
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    font-family: 'Nunito';
-    color: #fff;
-}
-
-form textarea {
-    background: #440628;
-    padding: 0.3125em;
-    border: 2px solid #000;
-    margin-bottom: 10px;
-    width: 18.75em; /* 300px */
-    height: 9.375em; /* 150px */
-    font-size: 1.1em;
-    font-family: 'Nunito';
-    color: #fff;
-}
-
 /**************** Hero ***************/
 
 #hero {
   background:     linear-gradient(rgba(246, 243, 28, 0.4) 40%, transparent),
-                    url('../img/hero_bg.JPG') no-repeat center center;
+                    url('../img/photo/new_bg.jpg') no-repeat center center;
   background-size: cover;
   padding: 5%;
   height: 900px;
