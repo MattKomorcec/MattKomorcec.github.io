@@ -2,7 +2,8 @@ $(function() {
 
 /* =================================================
 ***************** Google Maps **********************
-================================================= */ 
+================================================= */
+/* 
 var map = new GMaps({
             div: '#map',
             lat: 45.8144400,
@@ -49,6 +50,8 @@ var map = new GMaps({
             	content: "<h4 style='color: firebrick; text-shadow: none;'>This is where you can reach me in person.</h4>"
             }
         });
+
+*/
 
 /* =================================================
 ******** Mobile website dropdown menu **************
