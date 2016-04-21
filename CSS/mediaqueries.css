@@ -211,7 +211,19 @@
 	}
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+	/* Hiding dropdown menu on larger screens */
+
+	#hero h1 {
+		margin-top: 2.5rem;
+	}
+
+	.menuBtn, .menu {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1441px) {
 	/* Hiding dropdown menu on larger screens */
 
 	.menuBtn, .menu {
